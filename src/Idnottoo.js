@@ -6,7 +6,6 @@ import { Box,extendTheme } from "@chakra-ui/react";
 const theme = extendTheme({
     textStyles: {
       h1: {
-        // you can also use responsive styles
         fontSize: ["48px", "72px"],
         fontWeight: "bold",
         lineHeight: "110%",
