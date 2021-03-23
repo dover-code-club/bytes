@@ -33,8 +33,10 @@ export default class Dashboard extends React.Component {
 		}
 
 	onClose = () => {
-		this.setState({isOpen: false});
-		this.setState({avatar : this.state.save});
+		this.setState({
+		    isOpen: false,
+		    avatar: this.state.save
+		});
 	}
 
 	onSave = () => {
