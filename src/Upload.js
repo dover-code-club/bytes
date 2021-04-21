@@ -16,7 +16,7 @@ export default class Upload extends React.Component {
         // You also need to figure out how to make a post happen lol {this.props.onPost}
         return( 
             
-            <Modal isOpen="True" size="xl"> 
+            <Modal isOpen={this.props.isOpen} size="xl"> 
             <ModalOverlay/>
             
             <ModalContent>
