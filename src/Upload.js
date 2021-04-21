@@ -20,29 +20,26 @@ export default class Upload extends React.Component {
             <ModalOverlay/>
             
             <ModalContent>
-                <ModalHeader>Upload post</ModalHeader>
+                    <ModalHeader>Upload post</ModalHeader>
+                    
                     <ModalBody>
 
                         <Input placeholder="Your Title" marginBottom="1vw"></Input>
-                        <Textarea placeholder = "Your Text" marginLeft="0vw" resize="Vertical" height="8vw"/>
-                        {/* <Button colorScheme="teal" marginTop="1vw" size="sm"> */}
-                            <Input type="file" ref={this.fileInputRef} onChange={()=> {console.log("hi")}} hidden></Input>
-                            <Button marginTop="1vw"onClick={() => this.fileInputRef.current.click()}>Upload File</Button>
-                        {/* </Button> */}
+                        <Textarea placeholder = "Your Text" resize="Vertical" height="8vw"/>
+                        <Input type="file" ref={this.fileInputRef} onChange={()=> {console.log("hi")}} hidden></Input>
+                        <Button marginTop="1vw"onClick={() => this.fileInputRef.current.click()}>Upload File</Button>
 
                     </ModalBody>
                     
                     <ModalFooter>
                         <Flex width="100%">
-                        <Button colorScheme="red" mr={0} onClick={this.props.onClose}>Cancel</Button> 
+                        <Button colorScheme="red" onClick={this.props.onClose}>Cancel</Button> 
                         <Spacer/>
-                        <Button colorScheme="blue" mr={0} onClick={this.props.onPost}>Post</Button>
+                        <Button colorScheme="blue" onClick={this.props.onPost}>Post</Button>
                         </Flex> 
                     </ModalFooter>
-                    
+
             </ModalContent>
-
-
             </Modal>
 
         );
