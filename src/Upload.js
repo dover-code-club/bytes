@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-import { FormLabel, Input, Box, Textarea, Flex, Spacer, Button, Center, Modal, ModalOverlay, ModalContent, ModalBody, ModalHeader, ModalFooter, omitThemingProps } from "@chakra-ui/react";
+import { Input, Textarea, Flex, Spacer, Button, Modal, ModalOverlay, ModalContent, ModalBody, ModalHeader, ModalFooter } from "@chakra-ui/react";
 
 
 export default class Upload extends React.Component {
